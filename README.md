@@ -1,5 +1,3 @@
-# portfolio-website
-
 # Personal Portfolio Website
 
 Welcome to my personal portfolio website! This website showcases my skills, projects, and experience as a frontend web developer. It's a great place to learn more about me and my work.
