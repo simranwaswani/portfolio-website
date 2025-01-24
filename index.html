@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Simran Vaswani</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+     
+
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >Portfolio</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block"> <a href="#contact" id="contact-btn">Contact</a></button>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hello! I Am <br /><span class="c-orange">Simran Vaswani</span>
+          </h2>
+          <p class="text-muted">
+            I'm a passionate web developer skilled in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and React. As a fresher, I'm eager to apply my knowledge and grow by building dynamic, scalable web applications.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            Hire Me
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/current.jpg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+      <div class="heading text-center">
+        <small>My Expertise</small>
+        <h3>
+          Provide Wide Range of <br />
+          Digital Services
+        </h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-10 col-md-4" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon1.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Design</h4>
+              <p class="text-muted">
+                I offer professional web design services to create visually appealing, user-friendly, and fully responsive websites tailored to your needs. Let's bring your ideas to life with modern designs that engage your audience!
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon2.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Web Development</h4>
+              <p class="text-muted">
+                I specialize in frontend web development, focusing on creating responsive, visually appealing, and user-friendly interfaces. With expertise in HTML, CSS, JavaScript, and React, I bring designs to life with clean and efficient code. Let me help you build a seamless and engaging user experience.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-10" data-aos="fade-up">
+          <div class="service-card">
+            <div class="img">
+              <img
+                src="images/service-icon3.png"
+                class="w-25 img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="content mt-3">
+              <h4>Debugging</h4>
+              <p class="text-muted">
+                I offer efficient debugging services to identify and fix issues in your website's frontend. I ensure smooth functionality, optimized performance, and a flawless user experience by resolving errors quickly and effectively.
+              </p>
+              <a href="" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- expertise section ends here -->
+
+    <!-- skill section starts -->
+    <section class="skill mt-5 py-5" id="about">
+      <div class="row justify-content-evenly">
+        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress html-css">
+                  <span class="progress-value html-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">HTML & CSS</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress javascript">
+                  <span class="progress-value javascript-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-evenly mt-4">
+            <div class="col-10 col-md-6">
+              <div class="progress-card ms-3 ms-md-0">
+                <div class="circular-progress bootstrap">
+                  <span class="progress-value bootstrap-progress">0%</span>
+                </div>
+                <br />
+                <span class="text">Bootstrap</span>
+              </div>
+            </div>
+            <div class="col-10 col-md-6 mt-4 mt-md-0">
+              <div class="progress-card ms-3  ms-md-0">
+                <div class="circular-progress reactjs">
+                  <span class="progress-value reactjs-progress">0%</span>
+                </div>
+                <br>
+                <span class="text">ReactJS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+          <div class="heading mt-5 mt-md-3">
+            <small>My Skills</small>
+            <h3>Beautiful & Unique Digital Experiences</h3>
+            <p class="text-muted">
+              Explore my skills and expertise in web development, where I focus on creating responsive, user-friendly websites and optimizing performance. Feel free to download my CV to learn more about my background and how I can contribute to your next project.
+            </p>
+            
+            <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              <!-- here download attribute is used for adding download functionality to button  -->
+              <a
+              href="simran_vaswani_Resume-1 (1).pdf"
+              download="Simran Vaswani CV"
+              style="text-decoration: none; color: #fff;"
+            >
+              Download CV
+            </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading text-center pt-5">
+        <small>Creative Work</small>
+        <h3>Check My Portfolio</h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="game">Game</button>
+        <button class="filter-item" data-filter="webapp">Web App</button>
+        <button class="filter-item" data-filter="website">Website</button>
+        <button class="filter-item" data-filter="brand">Brand</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/2048game.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <a class = "link " href="https://2048gamebysimranvaswani.netlify.app" target="_blank">
+                  <h4 class="card-title">2048 Game</h4>
+                 </a>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="#" class="link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/currency-converter.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a class = "link " href="https://currencyconverterbysimranvaswani.netlify.app" target="_blank">
+                  <h4 class="card-title">Converter App</h4>
+                 </a>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Website</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/dictionary.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <a class = "link " href="https://englishdictionarybysimranvaswani.netlify.app" target="_blank">
+                  <h4 class="card-title">Dictionary</h4>
+                 </a>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">WebApp</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 brand all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/travel-website.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <a class = "link " href="https://travelwebsitebysimranvaswani.netlify.app" target="_blank">
+                  <h4 class="card-title"> Travel Website</h4>
+                 </a>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Brand</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/tictactoe.png" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <a class = "link " href="https://travelwebsitebysimranvaswani.netlify.app" target="_blank">
+                  <h4 class="card-title">TicTacToe Game</h4>
+                 </a>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Game</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/lang-translator.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <a class = "link " href="https://travelwebsitebysimranvaswani.netlify.app" target="_blank">
+                  <h4 class="card-title">Lang Translator</h4>
+                 </a>
+                <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                <span class="badge bg-secondary badge-pill">JavaScript</span>
+                <span class="badge bg-secondary badge-pill mb-2">Web App</span
+                ><br />
+                <a href="#" class="read-more-btn link">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+  
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+      <div class="heading text-center pt-5">
+        <small>Latest News</small>
+        <h3>Blog & Articles</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/2048game.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By simran vaswani</small
+              ><span class="ms-3">Jan 22,2025</span>
+              <h4 class="card-title">
+                <a href="https://2048gamebysimranvaswani.netlify.app">2048 game</a>
+              </h4>
+              <p class="text-muted">
+                A Simple Yet Addictive Sliding Puzzle Game That Tests Your Strategy Skills.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/currency-converter.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Simran Vaswani</small
+              ><span class="ms-3">Jan 23,2025</span>
+              <h4 class="card-title">
+                <a href="https://currencyconverterbysimranvaswani.netlify.app">Currency Converter</a>
+              </h4>
+              <p class="text-muted">
+                A user-friendly web app to instantly convert currencies with real-time exchange rates.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/dictionary.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By Simran Vaswani</small
+              ><span class="ms-3">Jan 24,2024</span>
+              <h4 class="card-title">
+                <a href="https://englishdictionarybysimranvaswani.netlify.app">English Dictionary</a>
+              </h4>
+              <p class="text-muted">
+                An English dictionary offers quick definitions, synonyms, pronunciations, and examples.
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/2048game.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By simran vaswani</small
+                    ><span class="text-muted ms-2">Jan 22,2025</span>
+                  <h4 class="card-title mt-3">2048 game</h4>
+                  <div class="social-links mt-4">
+                    <button onclick="window.open('https://www.linkedin.com/in/simran-vaswani-83942a252/', '_blank')" class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button onclick="window.open('https://www.instagram.com/simi_waswani?igsh=c3E4cmwzMjB0amUz', '_blank')" class="rounded-pill instagram">
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                    <button onclick="window.open('https://www.facebook.com/share/15qQj61YiL/', '_blank')" class="rounded-pill facebook">
+                      <i class="bi bi-facebook"></i>
+                    </button>
+                  </div>
+                  <p class="text-muted mt-3">
+                    The 2048 Game is a highly addictive and popular sliding puzzle game created by Gabriele Cirulli in 2014. Played on a 4x4 grid, the objective is to combine numbered tiles with the same value to create a tile with the number 2048, though players can continue beyond this for higher scores. Each move introduces a new tile with a value of 2 or 4 in a random empty spot, and players slide tiles in one direction using arrow keys or swipe gestures. When two tiles with the same value collide, they merge into one, adding their value to the score. The game is won when a 2048 tile appears, and it ends when there are no more valid moves. Known for its simple design, strategic gameplay, and endless replay value, 2048 has inspired numerous adaptations and remains a favorite among logic and puzzle enthusiasts worldwide. Its accessibility across web browsers, mobile devices, and desktops has further cemented its status as a timeless and universally appealing game.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/currency-converter.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By simran vaswani</small
+                    ><span class="text-muted ms-2 ms-md-0">Jan 23,2025</span>
+                  <h4 class="card-title mt-3">Currency Converter</h4>
+                  <div class="social-links mt-4">
+                    <button onclick="window.open('https://www.linkedin.com/in/simran-vaswani-83942a252/', '_blank')" class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button onclick="window.open('https://www.instagram.com/simi_waswani?igsh=c3E4cmwzMjB0amUz', '_blank')" class="rounded-pill instagram">
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                    <button onclick="window.open('https://www.facebook.com/share/15qQj61YiL/', '_blank')" class="rounded-pill facebook">
+                      <i class="bi bi-facebook"></i>
+                    </button>
+                  </div>
+                  <p class="text-muted mt-3">A currency converter website is a practical and user-friendly tool designed to help users instantly convert values between different currencies. It leverages real-time exchange rates fetched from reliable APIs, ensuring accuracy and up-to-date information for international transactions, travel budgeting, or financial planning. The website typically features an intuitive interface where users can select currencies, input amounts, and view conversions instantly. Additional features may include a historical exchange rate tracker, multi-language support, and responsiveness for seamless use across devices. This platform simplifies complex currency calculations, making it an essential tool for travelers, business professionals, and anyone dealing with global finances..</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/dictionary.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By Simran Vaswani</small
+                    ><span class="text-muted ms-2 ms-md-0">Jan 24,2025</span>
+                  <h4 class="card-title mt-3">English Dictionary</h4>
+                  <div class="social-links mt-4">
+                    <button onclick="window.open('https://www.linkedin.com/in/simran-vaswani-83942a252/', '_blank')" class="rounded-pill linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </button>
+                    <button onclick="window.open('https://www.instagram.com/simi_waswani?igsh=c3E4cmwzMjB0amUz', '_blank')" class="rounded-pill instagram">
+                      <i class="bi bi-instagram"></i>
+                    </button>
+                    <button onclick="window.open('https://www.facebook.com/share/15qQj61YiL/', '_blank')" class="rounded-pill facebook">
+                      <i class="bi bi-facebook"></i>
+                    </button>
+                  </div>
+                  <p class="text-muted mt-3">An English dictionary website is a comprehensive platform designed to help users explore the meanings, pronunciations, synonyms, antonyms, and usage examples of English words. It serves as an essential tool for language learners, writers, and professionals, providing accurate and up-to-date information on vocabulary. With a user-friendly interface, the website allows quick word searches and often includes features such as audio pronunciations, word origins, and grammar tips. Some advanced versions may also offer a thesaurus, word-of-the-day sections, and translation options, making it a versatile resource for improving language skills and understanding the English language.</p>
+                </div>
+              </div>
+              <div class="heading px-2">
+                <h3 class="fs-3 ms-3">Leave A Comment</h3>
+              </div>
+              <div class="contact-form ms-3 mt-3 pb-4 px-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Mobile No."
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    placeholder="Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                  Submit
+                </button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+      <div class="heading text-center">
+        <small>Get in Touch</small>
+        <h3>Any Questions? Feel Free to Contact</h3>
+      </div>
+      <div class="row justify-content-evenly mt-5">
+        <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-geo-alt-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>Mumtaz Square Clifton Karachi</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-telephone-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>+92 3103432815</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-send-fill"></i>
+            </div>
+            <div class="col-11">
+              <p>simran.vaswani1412@gmail.com</p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-globe-americas"></i>
+            </div>
+            <div class="col-11">
+              <p>https://github.com/simranwaswani</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+          <div class="contact-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Name" />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" placeholder="E-mail" />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="mobile" placeholder="Mobile No." />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" placeholder="Message" rows="5"></textarea>
+            </div>
+            <button type="button" id="submitBtn" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+              Submit
+            </button>
+            <p id="responseMessage" style="display:none; color: green;"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- contact section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#about">About</a>
+        <div class="vr"></div>
+        <a href="#service">Service</a>
+        <div class="vr"></div>
+        <a href="#portfolio">Portfolio</a>
+        <div class="vr"></div>
+        <a href="#blog">Blog</a>
+        <div class="vr"></div>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button onclick="window.open('https://www.linkedin.com/in/simran-vaswani-83942a252/', '_blank')" class="rounded-pill linkedin">
+          <i class="bi bi-linkedin"></i>
+        </button>
+        <button onclick="window.open('https://www.instagram.com/simi_waswani?igsh=c3E4cmwzMjB0amUz', '_blank')" class="rounded-pill instagram">
+          <i class="bi bi-instagram"></i>
+        </button>
+        <button onclick="window.open('https://www.facebook.com/share/15qQj61YiL/', '_blank')" class="rounded-pill facebook">
+          <i class="bi bi-facebook"></i>
+        </button>
+      </div>
+      
+      <hr class="text-muted my-4" />
+
+      <p>Copyright 2022 Portfolio of Simran Vaswani | All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
